@@ -1,0 +1,54 @@
+{
+  "connection": "default",
+  "collectionName": "building",
+  "info": {
+    "name": "building",
+    "description": "Vermont historical buildings"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "architect": {
+      "collection": "architect",
+      "via": "buildings",
+      "dominant": true
+    },
+    "style": {
+      "default": "",
+      "type": "string"
+    },
+    "type": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "year": {
+      "default": "",
+      "type": "integer"
+    },
+    "street": {
+      "default": "",
+      "type": "string"
+    },
+    "city": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

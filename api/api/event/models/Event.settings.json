@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "event",
+  "info": {
+    "name": "event",
+    "description": "A database of events"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "date": {
+      "default": "",
+      "type": "date"
+    },
+    "location": {
+      "default": "",
+      "type": "string",
+      "maxLength": 50
+    },
+    "link": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
